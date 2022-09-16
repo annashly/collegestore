@@ -1,0 +1,387 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Stoneridge</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet" />
+  <!-- slick slider -->
+
+  <link rel="stylesheet" href="{% static 'css/slick-theme.css' %}" />
+  <!-- font awesome style -->
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
+  <link href="{% static 'css/stylesss.css' %}" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Stoneridge
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
+                </li>
+                {% if user.is_authenticated %}
+                <li>hello {{user.username}}</li>
+                {% endif %}
+                <li class="nav-item">
+                  <a class="nav-link" href="register"> Register</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="login">Login</a>
+                </li>
+                <li class="nav-item">
+                  <button class="dropbtn">Dropdown
+                 <i class="fa fa-caret-down"></i>
+                   </button>
+                   <a href="#">ECONOMICS</a>
+                   <a href="#">PHYSICS</a>
+                   <a href="#">COMPUTER SCIENCE</a>
+                   <a href="#">ENGLISH</a>
+                   <a href="#">COMMERCE</a>
+
+                </li>
+              </ul>
+              <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+    </header>
+  </div>
+    <!-- end header section -->
+    <div class="container">
+          <a href="{% static 'images/hero-bg.jpg' %}"></a>
+    </div>
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active">1</li>
+          <li data-target="#customCarousel1" data-slide-to="1">2</li>
+          <li data-target="#customCarousel1" data-slide-to="2">3</li>
+          <li data-target="#customCarousel1" data-slide-to="3">4</li>
+          <li data-target="#customCarousel1" data-slide-to="4">5</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <h1>
+                      Stoneridge College
+                    </h1>
+                    <p>
+                      Stonebridge Associated Colleges is a team of bright and motivated people dedicated to helping learners fulfil their potential and meet their career goals.
+                    </p>
+                    <a href="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <h1>
+                      Stoneridge College
+                    </h1>
+                    <p>
+                      Set up in 1995, Stonebridge Associated Colleges was initially intended to help people qualify in complementary therapies, such as reflexology and aromatherapy. Gradually, it moved towards more mainstream practices such as teaching, nursing, healthcare, business, nutrition and beauty.
+                    </p>
+                    <a href="{% static 'images/hero-bg.jpg' %}">
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <h1>
+                      Stoneridge College
+                    </h1>
+                    <p>
+                      Some of the students we helped went on to study Marine Biology at university. Others have chosen teaching assistant courses that have landed them an early promotion. As their needs diversified, so did our curriculum. Two decades later the college became a leading name in the world of further education.
+                    </p>
+                    <a href="">
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <h1>
+                      Stoneridge College
+                    </h1>
+                    <p>
+                      A dedicated support team is also on hand to address student questions regarding enrolment, finances and guidance on the best-suited courses for you.
+
+Today we are proud to be part of The Stonebridge Group, a number of companies operating in the distance learning field for both government-subsidised and commercially-funded qualifications.
+                    </p>
+                    <a href="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-8 mx-auto">
+                  <div class="detail_box">
+                    <h1>
+                      Stoneridge College
+                    </h1>
+                    <p>
+                      Today, Stonebridge Associated Colleges has training facilities in Bude and Birmingham for a few of our vocational courses where our experienced tutors bring a hands-on approach to the teaching. However, there are over 650 online courses that can be completed remotely from anywhere in the world. With 50,000 students currently enrolled, the college is one of the largest distance learning suppliers in the UK.
+                    </p>
+                    <a href="">
+
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+
+  <!-- about section -->
+
+  <section class="about_section layout_padding">
+    <div class="container  ">
+      <div class="row">
+        <div class="col-md-6 ">
+          <div class="img-box">
+            <img src="{% static 'images/about-img.jpg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <div class="heading_container">
+              <h2>
+                Welcome To Our <span>College</span>
+              </h2>
+            </div>
+            <p>
+              Stone Ridge is a Catholic, independent, college preparatory school in Bethesda, Maryland for girls, Grades 1-12, with a co-educational early childhood program, Little Hearts, which serves children three-month old through Kindergarten age. Currently, we have 700 students. Explore the benefits of an all-girls school.
+            We are guided by the Goals and Criteria of Sacred Heart Education. With these Goals we commit to educate to a personal and active faith in God, a deep respect for intellectual values, a social awareness which impels to action, a building of community as a Christian value, and personal growth in an atmosphere of wise freedom.
+            Our mission informs all that we do. Stone Ridge School of the Sacred Heart inspires young women to lead and serve, through lives of purpose that integrate faith, intellect, community, social action, and personal growth in an atmosphere of wise freedom.
+            Stone Ridge is one of 24 North American schools in the Network of Sacred Heart Schools, an association of Catholic independent schools in the United States-Canada Province of the Society of the Sacred Heart. There are over 150 Schools of the Sacred Heart in 41 countries. Guided and united by the Goals and Criteria, the Network of Sacred Heart Schools provides a means for mutual support and development among schools through the sharing of intellectual and spiritual resources.</p>
+            <a href="">
+
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end about section -->
+
+
+  <!-- course section -->
+
+  <section class="course_section layout_padding-bottom">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Our <span>Departments</span>
+        </h2>
+        <p>
+          Stonebridge College is affiliated to Ranchi University, Ranchi. Following departments and programmes are offered by the college:
+        </p>
+      </div>
+    </div>
+    {% for i in result %}
+    <div id="customCarousel2" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="container">
+            <div class="box">
+              <div class="img-box">
+                <img src="{{i.img.url}}" alt="">
+              </div>
+              <div class="row">
+                <div class="col-lg-7 col-md-9 mx-auto">
+                  <div class="detail-box">
+                    <h3>
+                    {{i.name}}
+                    </h3>
+                    <p>
+                      {{i.desc}}
+                    </p>
+                    <a href="">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+     {% endfor %}
+  </section>
+
+  <!-- end course section -->
+
+  <!-- subscribe section -->
+
+  <section class="subscribe_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="img-box">
+            <img src="{% static 'images/subscribe-img.png' %}" alt="">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-box">
+            <h2>
+              For students
+            </h2>
+            <h1>Enquery</h1>
+            <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="login">
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+  </form>
+</div>
+      <script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "Dropbtn") {
+    x.className += " responsive";
+  } else {
+    x.className = "Dropbtn";
+  }
+}
+</script>
+
+
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end subscribe section -->
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <div class="footer_box">
+        <p>
+          &copy; <span id="displayYear"></span> All Rights Reserved By Stonebridge
+        </p>
+        <p>
+          Privacy & Policy
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- jQery -->
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <!-- bootstrap js -->
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'js/custom.js' %}"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+  <!-- End Google Map -->
+
+</body>
+
+</html>
