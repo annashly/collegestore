@@ -3,6 +3,7 @@ from .forms import MembershipForm
 from .models import Membership
 from django.views import View
 
+
 class HomeView(View):
  def get(self, request):
   form = MembershipForm()
